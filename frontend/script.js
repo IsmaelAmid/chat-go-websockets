@@ -22,7 +22,7 @@ nicknameInput.addEventListener("input", () => {
     nickname = nicknameInput.value || "Usuario"
 })
 
-const ws = new WebSocket("ws://localhost:8080/ws");
+const ws = new WebSocket("/ws");
 
 ws.onopen = () => {
     console.log("WebSocket connection established");
