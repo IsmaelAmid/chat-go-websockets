@@ -16,6 +16,7 @@ function addChatBubble(message, isOwn) {
     messageElement.textContent = message;
     messageBubble.appendChild(messageElement)
     messagesDiv.appendChild(messageBubble);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight
 }
 
 nicknameInput.addEventListener("input", () => {
